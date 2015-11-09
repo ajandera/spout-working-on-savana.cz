@@ -36,7 +36,7 @@ class FileSystemHelper
     {
         $this->throwIfOperationNotInBaseFolder($parentFolderPath);
 
-        $folderPath = $parentFolderPath . '/' . $folderName;
+        $folderPath = $parentFolderPath . '/uploads/' . $folderName;
 
         $wasCreationSuccessful = mkdir($folderPath, 0777, true);
         if (!$wasCreationSuccessful) {
